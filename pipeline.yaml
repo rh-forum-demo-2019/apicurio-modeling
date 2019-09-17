@@ -21,7 +21,7 @@ spec:
                   // This can be http or https
                   NEXUS_PROTOCOL = "http"
                   // Where your Nexus is running
-                  NEXUS_URL = "nexus-cicd.3.123.154.110.nip.io/nexus"
+                  NEXUS_URL = "nexus-cicd.18.184.165.137.nip.io/nexus"
                   // Repository where we will upload the artifact
                   NEXUS_REPOSITORY = "demo-repository"
                   // Jenkins credential id to authenticate to Nexus OSS
