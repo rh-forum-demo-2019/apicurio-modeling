@@ -1,7 +1,7 @@
 kind: "BuildConfig"
 apiVersion: "v1"
 metadata:
-  name: "sample-pipeline"
+  name: "build-api-stub"
 spec:
   triggers:
     - type: GitHub
@@ -32,14 +32,14 @@ spec:
                       steps {
                           script {
                               // Let's clone the source
-                              git 'https://github.com/jacobborella/apicurio.repo.git';
+                              git 'https://github.com/rh-forum-demo-2019/apicurio-modeling.git';
                           }
                       }
                   }
                   stage("mvn build") {
                       steps {
                           configFileProvider([configFile(fileId: 'mvn-nexus-config', variable: 'MAVEN_SETTINGS_XML')]) {
-                              dir("apicurio") {
+                              dir("apicurio-modeling/apicurio") {
                                   script {
                                       // If you are using Windows then you should use "bat" step
                                       // Since unit testing is out of the scope we skip them
