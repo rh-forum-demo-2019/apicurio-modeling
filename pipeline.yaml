@@ -39,7 +39,7 @@ spec:
                   stage("mvn build") {
                       steps {
                           configFileProvider([configFile(fileId: 'mvn-nexus-config', variable: 'MAVEN_SETTINGS_XML')]) {
-                              dir("apicurio-modeling/apicurio") {
+                              dir("apicurio") {
                                   script {
                                       // If you are using Windows then you should use "bat" step
                                       // Since unit testing is out of the scope we skip them
