@@ -96,9 +96,19 @@
         },
         "/beer": {
             "get": {
+                "parameters": [
+                    {
+                        "name": "api-key",
+                        "description": "Your access API Key",
+                        "in": "header",
+                        "required": true,
+                        "type": "string",
+                        "x-data-threescale-name": "user_keys"
+                    }
+                ],
                 "responses": {
                     "200": {
-                        "description": "List all beers in the catalog.",
+                        "description": "Array of Beers",
                         "schema": {
                             "type": "array",
                             "items": {
@@ -108,7 +118,8 @@
                     }
                 },
                 "operationId": "ListBeers",
-                "summary": "Get a list of beer."
+                "summary": "List all beers",
+                "description": "Get all Beers"
             }
         }
     },
