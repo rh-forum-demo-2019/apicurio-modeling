@@ -98,6 +98,7 @@
             "get": {
                 "responses": {
                     "200": {
+                        "description": "Array of beers",
                         "schema": {
                             "type": "array",
                             "items": {
