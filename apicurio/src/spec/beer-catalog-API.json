@@ -98,7 +98,7 @@
             "get": {
                 "responses": {
                     "200": {
-                        "description": "Array of beers",
+                        "description": "List all beers in the catalog.",
                         "schema": {
                             "type": "array",
                             "items": {
@@ -108,7 +108,7 @@
                     }
                 },
                 "operationId": "ListBeers",
-                "summary": "Get a list of all beers in the catalog."
+                "summary": "Get a list of beer."
             }
         }
     },
