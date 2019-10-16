@@ -113,7 +113,18 @@
                 "operationId": "ListBeers",
                 "summary": "List Beers",
                 "description": "Get List of Beers"
-            }
+            },
+             "parameters": [
+                
+                {
+                    "name": "api-key",
+                    "description": "Your access API Key",
+                    "in": "header",
+                    "required": true,
+                    "type": "string",
+                    "x-data-threescale-name": "user_keys"
+                }
+            ]
         }
     },
     "definitions": {
