@@ -2,7 +2,7 @@
     "swagger": "2.0",
     "info": {
         "title": "Beer Catalog API",
-        "version": "1.2",
+        "version": "1.1",
         "description": "An API for querying beer catalog of Acme Inc.",
         "contact": {
             "name": "Laurent Broudoux",
@@ -114,8 +114,7 @@
                 "summary": "List Beers",
                 "description": "Get List of Beers"
             },
-             "parameters": [
-                
+            "parameters": [
                 {
                     "name": "api-key",
                     "description": "Your access API Key",
