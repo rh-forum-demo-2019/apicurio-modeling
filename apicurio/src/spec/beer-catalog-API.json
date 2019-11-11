@@ -12,7 +12,7 @@
       "name": "MIT License",
       "url": "https://opensource.org/licenses/MIT"
     },
-    "version": "0.9"
+    "version": "1.0"
   },
   "basePath": "/api",
   "paths": {
@@ -142,23 +142,17 @@
     }
   },
     
-    "securityDefinitions": {
-        "api-key": {
-            "type": "apiKey",
-            "name": "api-key",
-            "in": "header"
-        }
-    },
-    "security": [
-        {
-            "api-key": [
-            ]
-        }
-    ],
-    "tags": [
-        {
-            "name": "beer",
-            "description": "Beer resource"
-        }
-    ]
+  "securityDefinitions": {
+      "api-key": {
+          "type": "apiKey",
+          "name": "api-key",
+          "in": "header"
+      }
+  },
+  "security": [
+      {
+          "api-key": [
+          ]
+      }
+  ],
 }
